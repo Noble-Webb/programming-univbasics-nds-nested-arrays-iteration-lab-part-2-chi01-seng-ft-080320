@@ -12,12 +12,13 @@ def find_min_in_nested_arrays(src)
      if src[row_index][element_index] < src[row][element]
        binding.pry
        smallest_ints = src[row_index][element_index]
+       outer_results << smallest_ints
      end
      element_index += 1 
      element += 1 
     end 
     
-    outer_results << smallest_ints
+    
       row_index += 1
       row += 1 
   end 
